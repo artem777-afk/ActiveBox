@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+/*container*/
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    border-bottom: 1px solid #505369;
+}
+
+
+/*navigation*/
+
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opasity .2s linear;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.nav__link:first-child {
+    margin-left: 0px;
+}
+
+
+/*intro*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 100px;
+    background: url(/img/intro_bg.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    margin: 0 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+.intro__subtitle {
+    margin: 0 0 60px;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/*button*/
+
+.btn {
+    display: inline-block;
+    font-variant: top;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600px;
+    text-transform: uppercase;
+    transition: .1s linear;
+}
+
+.btn--red {
+    background-color: #e84545;
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 2px;
+}
+
+.btn--red:hover {
+    background-color: #dd3434;
+}
