@@ -43,6 +43,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+    /* Dont use large z-index value. Z-index: 2; will be enough */
     z-index: 1000;
 }
 
@@ -60,6 +61,7 @@ p {
 .nav {
     display: flex;
     font-size: 13px;
+    /* Dont use px in font-weight property */
     font-weight: 700px;
     text-transform: uppercase;
 }
@@ -90,6 +92,7 @@ p {
     justify-content: center;
     height: 750px;
     padding-top: 100px;
+    /* Add . to image url */
     background: url(/img/intro_bg.jpg) no-repeat;
     background-size: cover;
     color: #fff;
@@ -108,6 +111,7 @@ p {
     font-size: 65px;
     line-height: 1.1;
     color: #fff;
+    /* Dont use px in font-weight property */
     font-weight: 700px;
     text-transform: uppercase;
 }
@@ -116,6 +120,7 @@ p {
     margin: 0 0 60px;
     font-size: 22px;
     line-height: 1.5;
+    /* You can use font-weight: normal; instead of 400 */
     font-weight: 400;
     color: #fff;
 }
@@ -130,6 +135,7 @@ p {
     font-family: inherit;
     cursor: pointer;
     color: #fff;
+    /* Dont use px in font-weight property */
     font-weight: 600px;
     text-transform: uppercase;
     transition: .1s linear;
@@ -169,6 +175,7 @@ p {
 .features__title {
     font-size: 14px;
     color: #2d3033;
+    /* Dont use px in font-weight property */
     font-weight: 700px;
     text-transform: uppercase;
     line-height: 1;
@@ -233,6 +240,8 @@ p {
 
 .works__text {
     font-size: 14px;
+    /* Dont use px in font-weight property */
+    /* You can use font-weight: normal; instead of 400 */
     font-weight: 400px;
     color: #fff;
 }
