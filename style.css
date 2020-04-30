@@ -44,8 +44,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    /* Dont use large z-index value. Z-index: 2; will be enough */
-    z-index: 1000;
+    z-index: 3;
 }
 
 .header__inner {
@@ -62,8 +61,7 @@ p {
 .nav {
     display: flex;
     font-size: 13px;
-    /* Dont use px in font-weight property */
-    font-weight: 700px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -93,8 +91,7 @@ p {
     justify-content: center;
     height: 750px;
     padding-top: 100px;
-    /* Add . to image url */
-    background: url(/img/intro_bg.jpg) no-repeat;
+    background: url(./img/intro_bg.jpg) no-repeat;
     background-size: cover;
     color: #fff;
 }
@@ -112,8 +109,7 @@ p {
     font-size: 65px;
     line-height: 1.1;
     color: #fff;
-    /* Dont use px in font-weight property */
-    font-weight: 700px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -121,7 +117,6 @@ p {
     margin: 0 0 60px;
     font-size: 22px;
     line-height: 1.5;
-    /* You can use font-weight: normal; instead of 400 */
     font-weight: 400;
     color: #fff;
 }
@@ -136,20 +131,20 @@ p {
     font-family: inherit;
     cursor: pointer;
     color: #fff;
-    /* Dont use px in font-weight property */
-    font-weight: 600px;
+    font-weight: 600;
     text-transform: uppercase;
     transition: .1s linear;
+    text-align: center;
 }
 
-.btn--red {
+.btn_red {
     background-color: #e84545;
     text-decoration: none;
     padding: 14px 40px;
     border-radius: 2px;
 }
 
-.btn--red:hover {
+.btn_red:hover {
     background-color: #dd3434;
 }
 
@@ -176,8 +171,7 @@ p {
 .features__title {
     font-size: 14px;
     color: #2d3033;
-    /* Dont use px in font-weight property */
-    font-weight: 700px;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 22px;
@@ -234,16 +228,14 @@ p {
 .works__title {
     margin-bottom: 10px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
 }
 
 .works__text {
     font-size: 14px;
-    /* Dont use px in font-weight property */
-    /* You can use font-weight: normal; instead of 400 */
-    font-weight: 400px;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -287,7 +279,176 @@ p {
 }
 
 .team__text {
+    margin-bottom: 30px;
     font-size: 14px;
     color: #6c7279;
     line-height: 1.5;
+}
+
+
+/*social*/
+
+.social {
+    display: flex;
+}
+
+.social_footer {
+    justify-content: center;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    margin-right: 4px;
+}
+
+.social_footer .social__item {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+
+/*clients*/
+
+.clients {
+    overflow: hidden;
+    background-color: #53354a;
+}
+
+.clients__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients__photo {
+    height: 500px;
+    width: 50%;
+    position: relative;
+}
+
+.clients__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.clients__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.clients__text {
+    font-family: 'Cardo', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.clients__author {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/*download*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+}
+
+.download__subtitle {
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn_long {
+    min-width: 280px;
+    background-color: #e84545;
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 2px;
+}
+
+.btn_long:hover {
+    background-color: #dd3434;
+}
+
+
+/*footer*/
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__iner {
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__block {
+    width: 33.33333%;
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer__adress {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    background-color: #313454;
+    padding: 20px 0;
+}
+
+.copyright__text {
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.copyright__author {
+    color: #fff;
 }
